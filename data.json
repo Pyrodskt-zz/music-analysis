@@ -1,0 +1,49 @@
+{
+    "data":[
+        {
+            "url":"https://music.youtube.com/watch?v=58rXvxcvovc&feature=share",
+            "path":"./videos/Sem Voce Sou Ninguem.mp3",
+            "time":259.5526530612245,
+            "PercussionMoy":0.08207014203071594,
+            "PercussionMax":1.0375717878341675,
+            "PercussionMin":-1.0688618421554565,
+            "HarmonicMin":-1.0969163179397583,
+            "HarmonicMoy":0.22591836750507355,
+            "HarmonicMax":1.0607798099517822,
+            "AmplitudeMin":-67.92340087890625,
+            "AmplitudeMoy":17.591763575484112,
+            "AmplitudeMax":52.076602935791016,
+            "Ratio":1.8994219253220612
+        },
+        {
+            "url":"https://music.youtube.com/watch?v=sTMgX1PDGAE&feature=share",
+            "path":"./videos/It Wasnt Me.mp3",
+            "time":227.69487528344672,
+            "PercussionMoy":0.14122271537780762,
+            "PercussionMax":1.1142535209655762,
+            "PercussionMin":-1.1761223077774048,
+            "HarmonicMin":-0.9777379631996155,
+            "HarmonicMoy":0.1314939558506012,
+            "HarmonicMax":0.9867777228355408,
+            "AmplitudeMin":-68.2086181640625,
+            "AmplitudeMoy":16.527081910110102,
+            "AmplitudeMax":51.791378021240234,
+            "Ratio":1.541536670788293
+        },
+        {
+            "url":"https://music.youtube.com/watch?v=5FIn4t6sfg8&feature=share",
+            "path":"./videos/Nemir - Sur ma vie ft Alpha Wann.mp3",
+            "time":177.4468934240363,
+            "PercussionMoy":0.07879360020160675,
+            "PercussionMax":0.6437243223190308,
+            "PercussionMin":-0.68234783411026,
+            "HarmonicMin":-0.5915763974189758,
+            "HarmonicMoy":0.0927179679274559,
+            "HarmonicMax":0.5946293473243713,
+            "AmplitudeMin":-73.63274383544922,
+            "AmplitudeMoy":13.826336141214139,
+            "AmplitudeMax":46.36725616455078,
+            "Ratio":2.3556343643679662
+        }
+    ]
+}

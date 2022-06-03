@@ -119,15 +119,17 @@ warnings.filterwarnings("ignore", category=UserWarning)
 for ind, i in enumerate(f_urls):
     try:
         print('file',ind, ' on ',  len(f_urls))
-        if download(i):
-            path = os.path.join('./videos/', listFiles()[0])
-            data = get_music_data(path, i, ind)
-            write_data_to_json(data)
-            delete_file(path)
+        download(i):
+            
 
-    except e: 
+    except VideoUnavailable: 
         print("error in url")
         pass
+    else:
+        path = os.path.join('./videos/', listFiles()[0])
+        data = get_music_data(path, i, ind)
+        write_data_to_json(data)
+        delete_file(path)
 
 
 

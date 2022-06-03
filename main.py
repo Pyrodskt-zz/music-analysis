@@ -49,7 +49,8 @@ def download(url):
         yt = YouTube(url).streams.first().download('videos/')
         rename(yt)
         return True
-    return False
+    else:
+        return False
 
 def listFiles():
     ls = [f for f in os.listdir('./videos/') if os.path.isfile(os.path.join('./videos/', f))]
@@ -93,6 +94,7 @@ def get_music_data(path, url, ind):
 
 
 def delete_file(path):
+    
     os.remove(path)
 
 
@@ -119,14 +121,17 @@ warnings.filterwarnings("ignore", category=UserWarning)
 for ind, i in enumerate(f_urls):
     try:
         print('file',ind, ' on ',  len(f_urls))
-        download(i)
-        path = os.path.join('./videos/', listFiles()[0])
-        data = get_music_data(path, i, ind)
-        write_data_to_json(data)
-        delete_file(path)
-        
-    except VideoUnavailable: 
+        res = download(i)
+        if (res):
+            path = os.path.join('./videos/', listFiles()[0])
+            data = get_music_data(path, i, ind)
+            print(data)
+            write_data_to_json(data)
+            delete_file(path)
+
+    except : 
         print("error in url")
+        pass
         
 
 
